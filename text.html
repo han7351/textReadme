@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>align-self</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <style>
+        body {
+            font-size: 20px;
+        }
+        a {
+            text-decoration: none;
+        }
+        p {
+            text-indent: 2em;
+            margin: 5px;
+        }
+        #app {
+            width: 220px;
+            display: flex;
+        }
+        .bian {
+            height: 60px;
+        }
+        #main {
+            width: 220px;
+            height: 300px;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+        }
+        .main-div {
+            flex: 1;
+        }
+        #auto {
+            align-self: auto;
+        }
+        #stretch {
+            align-self: stretch;
+        }
+        #center {
+            align-self: center;
+        }
+        #flex-start {
+            align-self: flex-start;
+        }
+        #flex-end {
+            align-self: flex-end;
+        }
+        #baseline {
+            align-self: baseline;
+        }
+        #initial {
+            align-self: initial;
+        }
+        #inherit {
+            align-self: inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <a href='./111index.html'>home</a><br>
+    主class:
+    <p>display: flex;</p>
+    <p><a href="./align-items.html">align-items: center;</a></p>
+    子id:
+    <p>align-self</p>
+    <hr>
+
+    <div id="app">
+        <div>
+            <div class="bian">align-self: auto<br>跟随align-items位置</div>
+            <div id="main">
+                <div class='main-div' style="background-color:coral;">红色</div>
+                <div class='main-div' style="background-color:lightblue;" id="auto">蓝色</div>
+                <div class='main-div' style="background-color:lightgreen;">带有更多内容的绿色 div</div>
+            </div>
+        </div>
+
+        <div>
+            <div class="bian">align-self: stretch<br>伸展</div>
+            <div id="main">
+                <div class='main-div' style="background-color:coral;">红色</div>
+                <div class='main-div' style="background-color:lightblue;" id="stretch">蓝色</div>
+                <div class='main-div' style="background-color:lightgreen;">带有更多内容的绿色 div</div>
+            </div>
+        </div>
+
+        <div>
+            <div class="bian">align-self: center<br>居中</div>
+            <div id="main">
+                <div class='main-div' style="background-color:coral;">红色</div>
+                <div class='main-div' style="background-color:lightblue;" id="center">蓝色</div>
+                <div class='main-div' style="background-color:lightgreen;">带有更多内容的绿色 div</div>
+            </div>
+        </div>
+
+        <div>
+            <div class="bian">align-self: flex-start<br>顶头</div>
+            <div id="main">
+                <div class='main-div' style="background-color:coral;">红色</div>
+                <div class='main-div' style="background-color:lightblue;" id="flex-start">蓝色</div>
+                <div class='main-div' style="background-color:lightgreen;">带有更多内容的绿色 div</div>
+            </div>
+        </div>
+
+        <div>
+            <div class="bian">align-self: flex-end<br>最底下</div>
+            <div id="main">
+                <div class='main-div' style="background-color:coral;">红色</div>
+                <div class='main-div' style="background-color:lightblue;" id="flex-end">蓝色</div>
+                <div class='main-div' style="background-color:lightgreen;">带有更多内容的绿色 div</div>
+            </div>
+        </div>
+
+        <div>
+            <div class="bian">align-self: baseline<br>头部位置</div>
+            <div id="main">
+                <div class='main-div' style="background-color:coral;">红色</div>
+                <div class='main-div' style="background-color:lightblue;" id="baseline">蓝色</div>
+                <div class='main-div' style="background-color:lightgreen;">带有更多内容的绿色 div</div>
+            </div>
+        </div>
+
+        <div>
+            <div class="bian">align-self: initial<br>跟随align-items位置</div>
+            <div id="main">
+                <div class='main-div' style="background-color:coral;">红色</div>
+                <div class='main-div' style="background-color:lightblue;" id="initial">蓝色</div>
+                <div class='main-div' style="background-color:lightgreen;">带有更多内容的绿色 div</div>
+            </div>
+        </div>
+
+        <div>
+            <div class="bian">align-self: inherit<br>初始化</div>
+            <div id="main">
+                <div class='main-div' style="background-color:coral;">红色</div>
+                <div class='main-div' style="background-color:lightblue;" id="inherit">蓝色</div>
+                <div class='main-div' style="background-color:lightgreen;">带有更多内容的绿色 div</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
