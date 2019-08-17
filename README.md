@@ -17,9 +17,9 @@ three|4312|发
 
 Code	
 ```Javascript
-    handelbind(e) {
-        this.setState({ value: e.target.value })
-        console.log(e.target['value'])
+handelbind(e) {
+    this.setState({ value: e.target.value })
+    console.log(e.target['value'])
   }
 ``` 
 
