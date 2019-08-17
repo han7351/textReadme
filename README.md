@@ -16,12 +16,11 @@ three|4312|发
 [网易地址](http://www.163.com)  
 
 Code	
-`handelbind(e) {
-
-    this.setState({ value: e.target.value })
-    console.log(e.target['value'])
-
-  }`  
+```Javascript
+    handelbind(e) {
+        this.setState({ value: e.target.value })
+        console.log(e.target['value'])
+  }``` 
   
   --------
   
